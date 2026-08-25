@@ -173,7 +173,8 @@ $usuarios = $stmt->fetchAll();
                                 <a class="btn-editar" href="usuario_editar.php?id=<?= $u['id'] ?>">Editar</a>
                                 <a class="btn-eliminar"
                                    href="usuario_eliminar.php?id=<?= $u['id'] ?>"
-                                   onclick="return confirm('¿Seguro que quieres eliminar a &quot;<?= htmlspecialchars($u['username'], ENT_QUOTES) ?>&quot;? Esta acción no se puede deshacer.');">
+                                   onclick="return confirm('¿Seguro que quieres eliminar a &quot;<?= htmlspecialchars($u['username'], ENT_QUOTES) 
+                                    ?>&quot;? Esta acción no se puede deshacer.');">
                                    Eliminar
                                 </a>
                             </td>
